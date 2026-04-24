@@ -43,4 +43,4 @@ class Settings(BaseSettings):
 
 @lru_cache
 def get_settings() -> Settings:
-    return Settings()
+    return Settings(database_url="sqlite+aiosqlite:///novels.db", nu_session_cookie="")
